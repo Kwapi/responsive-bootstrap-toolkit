@@ -17,6 +17,7 @@ var ResponsiveBootstrapToolkit = (function($){
             // Bootstrap 3
             bootstrap: {
                 'xs': $('<div class="device-xs visible-xs visible-xs-block"></div>'),
+                'ms': $('<div class="device-ms visible-ms visible-ms-block"></div>'),
                 'sm': $('<div class="device-sm visible-sm visible-sm-block"></div>'),
                 'md': $('<div class="device-md visible-md visible-md-block"></div>'),
                 'lg': $('<div class="device-lg visible-lg visible-lg-block"></div>')
@@ -64,6 +65,7 @@ var ResponsiveBootstrapToolkit = (function($){
              * For:  >sm, index = 1
              * For: >=sm, index = 2
              */
+          
             var index = 1 + (orEqual ? 1 : 0);
 
             /**

@@ -9,17 +9,9 @@
     var highlightBoxes = function() {
         $('.comparison-operator').removeClass('active');
 
-        if( viewport.is("<=sm") ) {
-            highlightBox('.box-1');
-        }
+        var breakpoint = viewport.current();
 
-        if( viewport.is("md") ) {
-            highlightBox('.box-2');
-        }
-
-        if( viewport.is(">md") ) {
-            highlightBox('.box-3');
-        }
+        highlightBox('.'+breakpoint);
     }
 
     // Executes once whole document has been loaded
